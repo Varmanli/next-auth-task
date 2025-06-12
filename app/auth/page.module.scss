@@ -1,0 +1,49 @@
+.authWrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0e0e0e;
+  padding: 2rem;
+}
+
+.authContainer {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  background-color: #1a1a1a;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  border: 1px solid #2e2e2e;
+
+  h1 {
+    font-size: 1.8rem;
+    color: #f2f2f2;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .authForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  @media (max-width: 768px) {
+    padding: 1.5rem 1.2rem;
+    max-width: 90%;
+
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 1.2rem 1rem;
+    max-width: 100%;
+
+    h1 {
+      font-size: 1.3rem;
+    }
+  }
+}

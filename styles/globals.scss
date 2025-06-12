@@ -1,0 +1,37 @@
+// 1. Reset
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// 2. Global variables (light/dark)
+:root {
+  --color-bg: #0f0f0f;
+  --color-text: #f5f5f5;
+  --color-primary: #6c63ff;
+  --color-secondary: #a09cc9;
+  --color-input-bg: #1e1e1e;
+  --color-border: #333;
+}
+
+body {
+  background-color: var(--color-bg);
+  font-family: var(--font-outfit), sans-serif;
+  color: var(--color-text);
+  font-size: 16px;
+  line-height: 1.5;
+  min-height: 100vh;
+  padding: 0 1rem;
+}
+
+// Scrollbar (optional)
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-secondary);
+  border-radius: 4px;
+}

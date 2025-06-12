@@ -1,0 +1,16 @@
+.welcomeMessage {
+  color: #f0f0f0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  user-select: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #6ea8fe;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.2rem;
+  }
+}
